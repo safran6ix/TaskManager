@@ -1,0 +1,78 @@
+/* App.css */
+.app {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* AddTask Component */
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-task button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* TaskList Component */
+.task-list {
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+/* TaskItem Component */
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.delete-btn {
+    padding: 4px 8px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
